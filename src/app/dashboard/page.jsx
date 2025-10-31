@@ -62,7 +62,7 @@ export default function Dashboard() {
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col">
         {/* Header */}
-        <header className="h-[87px] flex items-center justify-end gap-x-4 pr-[20px] max-md:pr-0 max-md:px-3 bg-[#0F0F0F]">
+        <header className="h-[87px] flex items-center justify-between gap-x-4 pr-[20px] max-md:pr-0 max-md:px-3 bg-[#0F0F0F]">
           <div className="h-[51px] max-w-[415px] flex-1 flex items-center bg-[#171717E5] border border-[#DFE2E712] rounded-full p-2  md:flex">
             <Search className="size-[22px] text-white/40 mr-2 ml-2" />
             <input
@@ -85,8 +85,8 @@ export default function Dashboard() {
                   className="w-10 h-10 rounded-full"
                 />
                 <div className="hidden sm:block text-sm">
-                  <p className="font-semibold text-white">Wilson Ohioleayo</p>
-                  <p className="text-white/35">hello@atopwebtech.com</p>
+                  <p className="font-semibold text-white">John Doe</p>
+                  <p className="text-white/35">johndoe@example.com</p>
                 </div>
               </div>
               <span>

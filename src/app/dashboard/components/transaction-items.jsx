@@ -61,17 +61,16 @@ export default function TransactionsItem({ initialTransactions }) {
       {paginatedTransactions.length > 0 ? (
         <>
           {paginatedTransactions.map((transaction, index) => {
-            const firstLetter = paginatedTransactions.titles
-              ?.charAt(0)
-              .toUpperCase();
+            const firstLetter = transaction.title?.charAt(0).toUpperCase();
 
             const lastItem = index === paginatedTransactions.length - 1;
+
             return (
               <div
                 key={transaction.id}
                 className={` ${
                   lastItem ? "border-b-0" : "border-b"
-                } border-white/10 py-4  hover:bg-gray-800 transition-colors duration-200`}
+                } border-white/10 py-4  hover:bg-[#090909]/50 transition-colors duration-200`}
               >
                 <div className="w-full flex items-center justify-between">
                   <div className="flex items-center space-x-4">
