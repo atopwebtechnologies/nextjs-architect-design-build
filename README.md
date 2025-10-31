@@ -1,65 +1,35 @@
-# Folder Structure:
+# ATOP MINI BANk
 
-We’ll organize the project so it’s easy to follow and maintain, even though it’s just for demonstration:
-bash
+## Prerequisites
 
-/mini-bank-blog
+- Runtime Environment: Node.js (v22.12.0)
+- NPM (package installer)
+- Next.js (v15.1.7)
+- React.js (v19.0.0)
+- Start project (npm run dev)
 
-/public
-/images - dashboard_final.png - dashboard_skeleton.png
+Ensure the following are installed on your system:
 
-/src
-/components - Registration.jsx - Login.jsx - Dashboard.jsx - ProfileSettings.jsx
-/styles - globals.css
+- Node.js (v22.12.0)
+- npm (comes with Node.js)
 
-- next.config.js
-- package.json
-- README.md
+## Key Dependencies
 
-We’ll place our final and skeleton dashboard images in the public/images folder. Each feature (registration, login, dashboard, profile settings) will have its own React component in the components folder. The styles folder will hold our global Tailwind configuration.
+The project relies on:
 
-## Colors
+- Next.js (v15.1.7) – React framework for server-side rendering.
+- React.js (v19.0.0) – Frontend library.
 
-- Primary Color: A soft, warm blue (#4285F4) for buttons and key elements.
-- Secondary Color: A light grey (#F1F3F4) for backgrounds and less prominent sections.
-- Accent Color: A soft green (#34A853) to highlight positive actions or statuses.
-- Neutral Text Color: A dark grey (#202124) to ensure good readability.
+## Getting Started
 
-FILE STRUCTURE:
-mini-bank/
-├── app/
-│ ├── globals.css
-│ ├── layout.js
-│ ├── page.js (Landing page)
-│ ├── register/
-│ │ └── page.js
-│ ├── login/
-│ │ └── page.js
-│ ├── dashboard/
-│ │ ├── page.js
-│ │ └── loading.js
-│ ├── profile/
-│ │ └── page.js
-│ └── api/
-│ ├── auth/
-│ │ ├── register/
-│ │ │ └── route.js
-│ │ └── login/
-│ │ └── route.js
-│ ├── user/
-│ │ └── route.js
-│ └── transactions/
-│ └── route.js
-├── components/
-│ ├── ui/
-│ │ ├── Button.js
-│ │ ├── Input.js
-│ │ └── Card.js
-│ ├── TransactionList.js
-│ ├── Navigation.js
-│ └── AuthForm.js
-├── lib/
-│ ├── auth.js
-│ ├── db.js (mock database)
-│ └── utils.js
-└── middleware.js
+Install dependencies:
+npm install
+
+Start the development server:
+npm run dev
+
+Open your browser to:
+http://localhost:3000
+
+Note:
+Ensure all versions match to avoid compatibility issues.
