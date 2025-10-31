@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Folder Structure:
 
-## Getting Started
+We’ll organize the project so it’s easy to follow and maintain, even though it’s just for demonstration:
+bash
 
-First, run the development server:
+/mini-bank-blog
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+/public
+/images - dashboard_final.png - dashboard_skeleton.png
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/src
+/components - Registration.jsx - Login.jsx - Dashboard.jsx - ProfileSettings.jsx
+/styles - globals.css
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- next.config.js
+- package.json
+- README.md
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We’ll place our final and skeleton dashboard images in the public/images folder. Each feature (registration, login, dashboard, profile settings) will have its own React component in the components folder. The styles folder will hold our global Tailwind configuration.
 
-## Learn More
+## Colors
 
-To learn more about Next.js, take a look at the following resources:
+- Primary Color: A soft, warm blue (#4285F4) for buttons and key elements.
+- Secondary Color: A light grey (#F1F3F4) for backgrounds and less prominent sections.
+- Accent Color: A soft green (#34A853) to highlight positive actions or statuses.
+- Neutral Text Color: A dark grey (#202124) to ensure good readability.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+FILE STRUCTURE:
+mini-bank/
+├── app/
+│ ├── globals.css
+│ ├── layout.js
+│ ├── page.js (Landing page)
+│ ├── register/
+│ │ └── page.js
+│ ├── login/
+│ │ └── page.js
+│ ├── dashboard/
+│ │ ├── page.js
+│ │ └── loading.js
+│ ├── profile/
+│ │ └── page.js
+│ └── api/
+│ ├── auth/
+│ │ ├── register/
+│ │ │ └── route.js
+│ │ └── login/
+│ │ └── route.js
+│ ├── user/
+│ │ └── route.js
+│ └── transactions/
+│ └── route.js
+├── components/
+│ ├── ui/
+│ │ ├── Button.js
+│ │ ├── Input.js
+│ │ └── Card.js
+│ ├── TransactionList.js
+│ ├── Navigation.js
+│ └── AuthForm.js
+├── lib/
+│ ├── auth.js
+│ ├── db.js (mock database)
+│ └── utils.js
+└── middleware.js
