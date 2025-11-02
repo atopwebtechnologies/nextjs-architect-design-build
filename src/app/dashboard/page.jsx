@@ -93,10 +93,14 @@ export default function Dashboard() {
                 <ChevronDown className="size-[24px] text-white/35" />
               </span>
               <button
+                title="Logout"
                 onClick={() => setIsAuthenticated(false)}
-                className="size-4 rounded-full"
+                className="relative group size-4 rounded-full"
               >
                 <LogOut className="size-6 p-1 rounded-full text-white transition-all duration-300 ease-in-out hover:bg-white/15 " />
+                <span className="absolute left-1/2 -translate-x-1/2 -top-8 text-xs text-white bg-black/70 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Logout
+                </span>
               </button>
             </div>
           </div>
